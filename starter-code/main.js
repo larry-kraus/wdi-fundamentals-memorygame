@@ -1,32 +1,24 @@
-console.log("JS file is connected to HTML! Woo!")
+console.log("JS file is connected to HTML! Woo!");
 
-/* var cardOne = "queen";
+var cardOne = "queen";
 var cardTwo = "queen";
 var cardThree = "king";
-var cardFour = "king"; */
+var cardFour = "king"; 
 
-/* if (cardTwo === cardFour) {
+/*
+if (cardTwo === cardOne) {
 	alert("Sorry, try again.");
 }
-else if (cardOne === cardTwo) {
-	alert("You found a match!");
+*/
+var gameBoard = document.getElementById('game-board');
+
+for (var i = 0; i < 4; i++) {
+		var cardElement = document.createElement('div');
+		cardElement.className = 'card';
+		gameBoard.appendChild(cardElement);
 }
-else if (cardThree === cardFour) {
-	alert("You found a match!")
-}
-else {
-	alert("Sorry, try again.")
-}; */
 
-var createCards = function() {
-	document.getElementById('game-board');
-
-	for (var i = 0; i < 4; i++) {
-		var fourCards = document.createElement('div');
-		fourCards.className = 'card';
-		world.appendChild(fourCards);
-};
-
+/*
 var cards = ["queen", "queen", "king", "king"];
 
 var cardsInPlay = [];
@@ -48,4 +40,4 @@ function isTwoCards() {
 	}
 }
 
-
+*/
